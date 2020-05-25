@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background: url('back.jpg') fixed;
+    background-size: cover;
+}
