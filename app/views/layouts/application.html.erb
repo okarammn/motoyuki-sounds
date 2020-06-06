@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MotoApp</title>
+    <title>Motoyuki Sounds</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-      <%= yield %>
+    <header>
+      <img class="logo" src="/assets/logo.PNG" alt="title">
+    </header>
+    <nav>
+      <ul>
+        <li><a href="">トップページ</a></li>
+        <li><a href="">プロフィール</a></li>
+        <li><a href="">作品一覧</a></li>
+        <li><a href="">お仕事依頼</a></li>
+      </ul>
+    </nav>
+      
+    <%= yield %>
+    
+    <footer>
+      <p class="copyright">© 2020 Motoyuki</p>
+    </footer>
   </body>
 </html>
