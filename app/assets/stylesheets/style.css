@@ -110,6 +110,8 @@ article{
 .sideber{
     flex: 1;
     min-width: 350px;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .mini-prof{
