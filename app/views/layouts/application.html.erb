@@ -6,6 +6,7 @@
     <%= csp_meta_tag %>
     
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <%= stylesheet_link_tag    'style' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -16,10 +17,10 @@
     </header>
     <nav>
       <ul>
-        <li><a href="">トップページ</a></li>
-        <li><a href="">プロフィール</a></li>
-        <li><a href="">作品一覧</a></li>
-        <li><a href="">お仕事依頼</a></li>
+        <li><%= link_to 'トップページ', '/' %></li>
+      　<li><%= link_to 'プロフィール', '' %></li>
+      　<li><%= link_to '作品一覧', '' %></li>
+      　<li><%= link_to 'お仕事依頼', '' %></li>
       </ul>
     </nav>
       
@@ -27,6 +28,11 @@
     
     <footer>
       <p class="copyright">© 2020 Motoyuki</p>
+      <% if user_signed_in? %>
+        <%= link_to '記事投稿', '/articles/new' %>
+        <%= link_to 'ログアウト', '/users/sign_out' %>
+      <% else %>
+      <% end %>
     </footer>
   </body>
 </html>

@@ -9,12 +9,12 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    Articre.create(title: article_params[:title], text: article_params[:text], image: article_params[:image], user_id: current_user.id)
+    Article.create(title: article_params[:title], text: article_params[:text], image: article_params[:image])
   end
   
   private
   
   def article_params
-    paramas.require(:article).permit(:title, :text, :image)
+    params.require(:article).permit(:title, :text, :image)
   end
 end
