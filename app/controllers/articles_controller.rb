@@ -12,6 +12,10 @@ class ArticlesController < ApplicationController
     Article.create(title: article_params[:title], text: article_params[:text], image: article_params[:image])
   end
   
+  def show
+    @article = Article.find(params[:id])
+  end
+  
   private
   
   def article_params
