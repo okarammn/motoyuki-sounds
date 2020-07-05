@@ -1,0 +1,17 @@
+<div class="contents-n">  
+  <h1>記事投稿</h1>
+  <div class="field">
+    <%= form_for @article do |f| %>
+      <%=f.label ":サムネイル用画像ファイル" %><br>
+      <%= f.file_field :image, class: "image_form" %><br>
+      <br>
+      <%= f.label ":タイトル" %><br>
+      <%= f.text_field :title, class: "title_form" %><br>
+      <br>
+      <%= f.label ":本文" %>
+      <%= f.hidden_field :text, id: :article_text %>
+      <trix-editor input="article_text" class="text_form"></trix-editor>
+      <%= f.submit '投稿', class: "submit-btn" %>
+    <% end %>
+  </div>  
+</div>
