@@ -1,24 +1,30 @@
 <div class="contents-t">
   <div class="article-box">
     <% @articles.each do |article| %>
-    <article>
-      <div class="article-image-box">
-        <% if article.image.attached? %>  
-          <%= image_tag article.image, class: 'article-image' %>  
-        <% end %>  
-      </div>
-      <div class="article-main">
-        <div class="article-title-box">
-          <%= link_to article_path(article.id), method: :get, class: 'article-link' do %>
-            <h1 class="article-title"><%= article.title %></h1>
-          <% end %>
-          <p class="article-create-t">投稿日:   <%= article.updated_at.strftime('%Y/%m/%d') %></p>
+      <article>
+        <div class="article-image-box">
+          <% if article.image.attached? %>  
+            <%= image_tag article.image, class: 'article-image' %>  
+          <% end %>  
         </div>
-      <div class="article-text">
-        <%= sanitize article.text, tags: %w(h1 h2 h3 h4 h5 h6 ul ol li p a img del table tr td em br strong div), attributes:  %w(id class href) %>
-      </div>
-    </article>
+        <div class="article-main">
+          <div class="article-title-box">
+            <%= link_to article_path(article.id), method: :get, class: 'article-link' do %>
+              <h1 class="article-title"><%= article.title %></h1>
+            <% end %>
+            <p class="article-create-t">投稿日:   <%= article.updated_at.strftime('%Y/%m/%d') %></p>
+          </div>
+          <div class="article-text">
+            <%= sanitize article.text, tags: %w(h1 h2 h3 h4 h5 h6 ul ol li p a img del table tr td em br strong div), attributes:  %w(id class href) %>
+          </div>
+          <div class="article-link-2">
+            <%= link_to "記事を読む>>", article_path(article.id), method: :get, class: 'article-link'%>
+          </div>
+        </div>
+      </article>
     <% end %>
+    <%= paginate @articles %>
+    
   </div>
   
   <div class="sideber">

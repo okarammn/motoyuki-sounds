@@ -38,7 +38,7 @@ ul{
     list-style-type: none;
 }
 
-li{
+.main-nav{
     height: 50px;
     width: 200px;
     margin: 0 30px;
@@ -92,6 +92,7 @@ article{
 }
 
 .article-main{
+    position: relative;
     width: 480px;
 }
 
@@ -101,6 +102,19 @@ article{
 }
 
 .article-link:hover{
+    color: white;
+}
+
+.article-link-2{
+    height: 30px;
+    position: absolute;
+    bottom: 10px; /** 場合によっては微調整 **/
+    right: 30px; 
+    text-decoration: none;
+    color: black;
+}
+
+.article-link-2:hover{
     color: white;
 }
 
@@ -118,7 +132,7 @@ article{
 }
 
 .article-text{
-    max-height: 165px;
+    height: 120px;
     padding: 20px;
     word-wrap: break-word;
     overflow: hidden;
@@ -165,6 +179,13 @@ article{
     margin: 30px 30px;
 }
 
+nav.pagination{
+    opacity: 0.5;
+    height: 28px;
+    margin: 30px;
+    background-color: white;
+}
+
 footer{
     margin-top: auto;
     height: 100px;
@@ -200,7 +221,29 @@ footer{
     margin-top: 30px;
 }
 
+.contents-n{
+    width: 1000px;
+    margin: auto;
+}
+
+.contents-n h1{
+    height: 80px;
+    color: #330066;
+}
+
+.submit-btn{
+    margin-top: 10px;
+    height: 30px;
+    width: 40px;
+    background-color: #999999;
+    border: solid 1px;
+    border-radius: 10px;
+    
+}
+
 .field{
+    width: 1000px;
+    padding: 30px 100px;
     background-color: #DCDCDC;
     box-shadow: 5px 5px 10px;
 }
