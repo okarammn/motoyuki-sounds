@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
   
+  before_action :move_to_index, except: [:index, :show]
+  
   def index
     @articles = Article.all.order("created_at DESC").page(params[:page]).per(5)  #allは省略可
   end
@@ -37,4 +39,8 @@ class ArticlesController < ApplicationController
   def article_params
     params.require(:article).permit(:title, :text, :image)
   end
+  
+  def move_to_index
+    redirect_to action: :index unless user_signed_in?
+  end 
 end

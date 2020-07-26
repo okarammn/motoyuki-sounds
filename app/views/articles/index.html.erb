@@ -12,8 +12,8 @@
             <%= link_to article_path(article.id), method: :get, class: 'article-link' do %>
               <h1 class="article-title"><%= article.title %></h1>
             <% end %>
+            <p class="article-create-t">投稿日:   <%= article.updated_at.strftime('%Y/%m/%d') %>
             <% if user_signed_in? %>
-              <p class="article-create-t">投稿日:   <%= article.updated_at.strftime('%Y/%m/%d') %>
               　　<%= link_to '記事を編集', edit_article_path(article.id), method: :get %>
               <%= link_to '記事を削除', article_path(article.id), method: :delete, data: {confirm: "削除しますか？"} %>
               </p>
@@ -35,7 +35,7 @@
   <div class="sideber">
     <div class="mini-prof">
       <img class="mini-prof-image" src="/assets/prof.PNG">
-      <h2>Motoyuki</h3>
+      <h2>Motoyuki</h2>
       <h5>プロフィール</h5>
       <p class="mini-prof-text">
         この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
