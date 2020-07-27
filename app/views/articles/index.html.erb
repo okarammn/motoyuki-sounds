@@ -34,11 +34,10 @@
   
   <div class="sideber">
     <div class="mini-prof">
-      <img class="mini-prof-image" src="/assets/prof.PNG">
-      <h2>Motoyuki</h2>
-      <h5>プロフィール</h5>
+      <%= image_tag Profile.find(1).image, class: 'prof-image' %>
+      <h2><%= Profile.find(1).name %></h2>
       <p class="mini-prof-text">
-        この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+        <%= Profile.find(1).mini_text %>
       </p>
     </div>
     <a class="twitter-timeline" data-width="280" data-height="500" data-theme="light" href="https://twitter.com/Motoyuki_PinkS?ref_src=twsrc%5Etfw">Tweets by Motoyuki_PinkS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

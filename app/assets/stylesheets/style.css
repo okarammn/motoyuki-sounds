@@ -162,8 +162,8 @@ article{
 }
 
 .mini-prof h2{
-    text-decoration-line: underline;
-    margin: 5px;
+   
+    margin: 10px 10px 20px;
 }
 
 .mini-prof h5{
@@ -171,8 +171,10 @@ article{
 }
 
 .mini-prof p{
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     text-align: left;
+    border-top: groove;
 }
 
 .twitter-timeline{
