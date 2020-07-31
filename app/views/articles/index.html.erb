@@ -37,9 +37,18 @@
       <%= image_tag Profile.find(1).image, class: 'prof-image' %>
       <h2><%= Profile.find(1).name %></h2>
       <p class="mini-prof-text">
-        <%= Profile.find(1).mini_text %>
+        <%= simple_format(Profile.find(1).mini_text) %>
       </p>
     </div>
     <a class="twitter-timeline" data-width="280" data-height="500" data-theme="light" href="https://twitter.com/Motoyuki_PinkS?ref_src=twsrc%5Etfw">Tweets by Motoyuki_PinkS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <% if user_signed_in? %>
+      <div class="link-l">
+      <%= link_to '記事投稿', '/articles/new' %>
+      </div>
+      <div class="link-l">
+      <%= link_to 'ログアウト', '/users/sign_out' %>
+      </div>
+    <% else %>
+    <% end %>
   </div>
 </div>
