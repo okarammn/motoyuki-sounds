@@ -9,9 +9,7 @@
         </div>
         <div class="article-main">
           <div class="article-title-box">
-            <%= link_to article_path(article.id), method: :get, class: 'article-link' do %>
-              <h1 class="article-title"><%= article.title %></h1>
-            <% end %>
+            <h1><%= link_to article.title, article_path(article.id), method: :get, class: 'article-link' %></h1>
             <p class="article-create-t">投稿日:   <%= article.updated_at.strftime('%Y/%m/%d') %>
             <% if user_signed_in? %>
               　　<%= link_to '記事を編集', edit_article_path(article.id), method: :get %>
@@ -22,7 +20,7 @@
           <div class="article-text">
             <%= sanitize article.text, tags: %w(h1 h2 h3 h4 h5 h6 ul ol li p a img del table tr td em br strong div), attributes:  %w(id class href) %>
           </div>
-          <div class="article-link-2">
+          <div class="article-link-e">
             <%= link_to "記事を読む>>", article_path(article.id), method: :get, class: 'article-link'%>
           </div>
         </div>
@@ -34,21 +32,18 @@
   
   <div class="sideber">
     <div class="mini-prof">
-      <%= image_tag Profile.find(1).image, class: 'prof-image' %>
-      <h2><%= Profile.find(1).name %></h2>
+      <%= image_tag Profile.find(1).image, class: 'profile-image' %>
+      <h2><%= link_to  Profile.find(1).name, profile_path(1), class: 'profile-link'%></h2>
       <p class="mini-prof-text">
         <%= simple_format(Profile.find(1).mini_text) %>
       </p>
     </div>
-    <a class="twitter-timeline" data-width="280" data-height="500" data-theme="light" href="https://twitter.com/Motoyuki_PinkS?ref_src=twsrc%5Etfw">Tweets by Motoyuki_PinkS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <a class="twitter-timeline" data-width="280" data-height="500" data-theme="light" href="https://twitter.com/Motoyuki_PinkS?ref_src=twsrc%5Etfw">Tweets by Motoyuki_PinkS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <% if user_signed_in? %>
-      <div class="link-l">
-      <%= link_to '記事投稿', '/articles/new' %>
+      <div class="login-nav">
+        <%= link_to '記事投稿', '/articles/new', class: "link-btn" %>
+        <%= link_to 'ログアウト', '/users/sign_out', class: "link-btn" %>
       </div>
-      <div class="link-l">
-      <%= link_to 'ログアウト', '/users/sign_out' %>
-      </div>
-    <% else %>
     <% end %>
   </div>
 </div>
