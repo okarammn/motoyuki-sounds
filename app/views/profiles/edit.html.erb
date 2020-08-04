@@ -1,0 +1,22 @@
+<div class="contents-n">  
+  <h2>プロフィール編集</h2>
+  <div class="field">
+    <%= form_for @profile do |f| %>
+      <%=f.label ":プロフィール用画像ファイル" %><br>
+      <%= f.file_field :image,value: "@article.image", class: "image-form" %><br>
+      <br>
+      <%= f.label ":名前" %><br>
+      <%= f.text_field :name, class: "title-form" %><br>
+      <br>
+      <%= f.label ":top用プロフィール文(6行まで)" %><br>
+      <%= f.text_area :mini_text, class: 'mini-prof-form' %><br>
+      <br>
+      <%= f.label ":プロフィール文" %>
+      <%= f.hidden_field :text, id: :article_text %>
+      <trix-editor input="article_text" value="<%= @profile.text %>" class="text-form"></trix-editor>
+      <div class="post-article">
+        <%= f.submit '更新', class: "submit-btn" %>
+      </div>
+    <% end %>
+  </div>  
+</div>
