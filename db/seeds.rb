@@ -9,4 +9,6 @@
 
 # Article.create(title: 'シード', text: 'うまくいくかな')  local2020:8/6 
 
-Profile.create(name: 'Motoyuki', text: 'test', mini_text: 'test2')
+# Profile.create(name: 'Motoyuki', text: 'test', mini_text: 'test2') public2020:8/6
+
+User.create(email: 'tttttt@tttttt', password: 'tttttt')
