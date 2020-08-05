@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+# Article.create(title: 'シード', text: 'うまくいくかな')  local2020:8/6 
+
+Profile.create(name: 'Motoyuki', text: 'test', mini_text: 'test2')
