@@ -55,6 +55,7 @@ li a{
     color: white;
     font-size: 30px;
     text-decoration: none;
+    display: block;
 }
 
 .contents-t{
@@ -105,7 +106,7 @@ article{
 }
 
 .article-link:hover{
-    color: white;
+    text-decoration-line: underline;
 }
 
 .article-link-e{
@@ -166,12 +167,17 @@ article{
     border-bottom: groove;
 }
 
+.profile-link{
+    color: black;
+    text-decoration: none;
+}
+
 .profile-link:visited{
     color: black;
 }
 
 .profile-link:hover{
-    color: white;
+    text-decoration-line: underline;
 }
 
 .mini-prof h5{
@@ -347,6 +353,10 @@ footer{
     padding: 30px;
 }
 
+.twitter_link_img{
+    height: 50px;
+}
+
 .works{
     background-color: #DCDCDC;
     box-shadow: 5px 5px 10px;
@@ -354,7 +364,11 @@ footer{
     padding: 30px;
 }
 
-a{
+.works-link{
     text-decoration: none;
+    color: black;
 }
 
+.works-link:hover{
+    color: blue;
+}

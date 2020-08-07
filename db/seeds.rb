@@ -11,4 +11,4 @@
 
 # Profile.create(name: 'Motoyuki', text: 'test', mini_text: 'test2') public2020:8/6
 
-User.create(email: 'tttttt@tttttt', password: 'tttttt')
+# User.create(email: 'tttttt@tttttt', password: 'tttttt') public2020:8/6
