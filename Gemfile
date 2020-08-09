@@ -63,3 +63,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'trix'
 gem 'kaminari'
+gem "aws-sdk-s3", require: false
