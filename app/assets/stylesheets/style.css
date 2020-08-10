@@ -372,3 +372,8 @@ footer{
 .works-link:hover{
     color: blue;
 }
+
+.link-icon{
+    height: 40px;
+    padding-right: 10px;
+}
