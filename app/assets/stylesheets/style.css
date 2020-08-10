@@ -353,8 +353,13 @@ footer{
     padding: 30px;
 }
 
-.twitter_link_img{
-    height: 50px;
+.twitter-link{
+    text-decoration: none;
+    color: black;
+}
+
+.twitter-link:hover{
+    color: blue;
 }
 
 .works{
