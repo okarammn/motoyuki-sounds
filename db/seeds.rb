@@ -11,4 +11,10 @@
 
 # Profile.create(name: 'Motoyuki', text: 'test', mini_text: 'test2') public2020:8/6
 
-# User.create(email: 'tttttt@tttttt', password: 'tttttt') public2020:8/6
+# User.create(email: 'tttttt@tttttt', password: 'tttttt') public2020:8/6　8/16テーブルから削除
+
+User.create(email: 'natsumi_shida@ikwvk.kkx', password: 'xmWCaMeC')
+
+
+User.create(email: 'takumi2739@lsldzyzrx.ntonf.hb', password: 'Pe2cWPYD')
+
