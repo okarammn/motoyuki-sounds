@@ -13,8 +13,8 @@
 
 # User.create(email: 'tttttt@tttttt', password: 'tttttt') public2020:8/6　8/16テーブルから削除
 
-User.create(email: 'natsumi_shida@ikwvk.kkx', password: 'xmWCaMeC')
+User.create(id: '1', email: 'natsumi_shida@ikwvk.kkx', password: 'xmWCaMeC')
 
 
-User.create(email: 'takumi2739@lsldzyzrx.ntonf.hb', password: 'Pe2cWPYD')
+User.create(id: '2',email: 'takumi2739@lsldzyzrx.ntonf.hb', password: 'Pe2cWPYD')
 
