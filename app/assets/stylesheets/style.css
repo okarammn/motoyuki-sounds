@@ -449,7 +449,6 @@ footer{
     .contents-t{
         padding: 5px;
         max-width: 100vw;
-        height: calc(100vh - 460px);
         display: block;
         justify-content: center;
         flex: 1;
@@ -531,6 +530,7 @@ footer{
         min-width: 95vw;
         padding: 5px;
         display: block;
+        flex: 1;
     }
     
     .mini-prof{
