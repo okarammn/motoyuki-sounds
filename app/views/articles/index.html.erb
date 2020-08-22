@@ -9,7 +9,7 @@
         </div>
         <div class="article-main">
           <div class="article-title-box">
-            <h1 class="article-title-t"><%= link_to article.title, article_path(article.id), method: :get, class: 'article-link' %></h1>
+            <h3 class="article-title-t"><%= link_to article.title, article_path(article.id), method: :get, class: 'article-link' %></h3>
             <p class="article-create-t">投稿日:   <%= article.updated_at.strftime('%Y/%m/%d') %>
             <% if user_signed_in? %>
               　　<%= link_to '記事を編集', edit_article_path(article.id), method: :get %>

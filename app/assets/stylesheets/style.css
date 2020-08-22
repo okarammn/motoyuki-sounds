@@ -98,7 +98,7 @@ article{
 }
 
 .article-title-box{
-    height: 80px;
+    min-height: 80px;
     padding: 10px;
     margin-right: 10px;
     position: relative;
@@ -106,7 +106,8 @@ article{
 }
 
 .article-title-t{
-    
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .article-link{
@@ -124,8 +125,8 @@ article{
 }
 
 .article-text{
-    height: 120px;
-    padding: 20px;
+    height: 100px;
+    padding: 10px;
     word-wrap: break-word;
     overflow: hidden;
 }
@@ -133,7 +134,7 @@ article{
 .article-link-e{
     height: 30px;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     right: 30px; 
     text-decoration: none;
 }
@@ -401,6 +402,7 @@ footer{
         min-height: 100vh;
         background: url('back.jpg') fixed;
         background-size: cover;
+        font-size: 80%;
     }
     
     header{
@@ -495,15 +497,22 @@ footer{
     }
         
     .article-title-box{
-        height: 52px;
+        min-height: 50px;
+        height: auto;
         padding: 0px;
         margin: 0 10px;
         position: relative;
         border-bottom: groove;
+        overflow: hidden;
     }
     
     .article-title-t{
-        font-size: 20px;
+        max-height: 30px;
+        margin-bottom: 20px;
+        line-height: 1em;
+        font-size: 15px;
+        max-width: 50vw;
+        overflow: hidden;
     }
     
     .article-link{
@@ -521,14 +530,14 @@ footer{
     }
     
     .article-text{
-        height: 50px;
+        height: 60px;
         padding: 0 10px;
         word-wrap: break-word;
         overflow: hidden;
     }
     
     .article-link-e{
-        height: 30px;
+        height: 20px;
         position: absolute;
         bottom: 0px;
         right: 10px; 
