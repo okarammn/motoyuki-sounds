@@ -488,6 +488,18 @@ footer{
         position: relative;
         flex: 3;
     }
+        
+    .article-title-box{
+        height: 52px;
+        padding: 0px;
+        margin: 0 10px;
+        position: relative;
+        border-bottom: groove;
+    }
+    
+    .article-title-box h1{
+        font-size: 20px;
+    }
     
     .article-link{
         text-decoration: none;
@@ -498,32 +510,24 @@ footer{
         text-decoration-line: underline;
     }
     
-    .article-link-e{
-        height: 30px;
-        position: absolute;
-        bottom: 10px;
-        right: 30px; 
-        text-decoration: none;
-    }
-    
-    .article-title-box{
-        height: 80px;
-        padding: 10px;
-        margin-right: 10px;
-        position: relative;
-        border-bottom: groove;
-    }
-    
     .article-create-t{
         position: absolute;
         bottom: 0;
     }
     
     .article-text{
-        height: 120px;
-        padding: 20px;
+        height: 60px;
+        padding: 0 10px;
         word-wrap: break-word;
         overflow: hidden;
+    }
+    
+    .article-link-e{
+        height: 30px;
+        position: absolute;
+        bottom: 0px;
+        right: 10px; 
+        text-decoration: none;
     }
     
     .sideber{
