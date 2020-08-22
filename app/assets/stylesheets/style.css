@@ -97,6 +97,18 @@ article{
     width: 480px;
 }
 
+.article-title-box{
+    height: 80px;
+    padding: 10px;
+    margin-right: 10px;
+    position: relative;
+    border-bottom: groove;
+}
+
+.article-title-t{
+    
+}
+
 .article-link{
     text-decoration: none;
     color: black;
@@ -104,22 +116,6 @@ article{
 
 .article-link:hover{
     text-decoration-line: underline;
-}
-
-.article-link-e{
-    height: 30px;
-    position: absolute;
-    bottom: 10px;
-    right: 30px; 
-    text-decoration: none;
-}
-
-.article-title-box{
-    height: 80px;
-    padding: 10px;
-    margin-right: 10px;
-    position: relative;
-    border-bottom: groove;
 }
 
 .article-create-t{
@@ -133,6 +129,15 @@ article{
     word-wrap: break-word;
     overflow: hidden;
 }
+
+.article-link-e{
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 30px; 
+    text-decoration: none;
+}
+
 
 .sideber{
     flex: 1;
@@ -497,7 +502,7 @@ footer{
         border-bottom: groove;
     }
     
-    .article-title-box h1{
+    .article-title-t{
         font-size: 20px;
     }
     
@@ -598,6 +603,7 @@ footer{
         display: flex;
         justify-content: space-around;
     }
+    
     .pagination{
         opacity: 0.3;
         height: 28px;
@@ -607,7 +613,6 @@ footer{
         
         display: inline-block;
     }
-    
     
     footer{
         margin-top: auto;
