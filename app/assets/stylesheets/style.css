@@ -234,7 +234,7 @@ footer{
 }
 
 .article-title-s{
-    height: 70px;
+    height: auto;
 }
 
 .article-create-s{
@@ -516,7 +516,7 @@ footer{
     }
     
     .article-text{
-        height: 60px;
+        height: 50px;
         padding: 0 10px;
         word-wrap: break-word;
         overflow: hidden;
@@ -633,7 +633,8 @@ footer{
     }
     
     .article-title-s{
-        height: 70px;
+        height: auto;
+        font-size: 20px;
     }
     
     .article-create-s{
